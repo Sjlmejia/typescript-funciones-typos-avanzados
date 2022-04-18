@@ -1,0 +1,18 @@
+export const createProduct =(
+  id:string | number,
+  isNew: boolean,
+  stock?: number,
+) => {
+  return {
+    id,
+    isNew,
+    stock: stock ?? 10,
+  }
+}
+
+const p1 = createProduct(1,true,12);
+
+console.log(p1);
+const p2 = createProduct(1,true,0);
+
+console.log(p2);
