@@ -26,5 +26,6 @@ console.log(products);
 
 findProducts({
   stock:10,
-  color:'red'
+  color:'red',
+  tags: ['red', 'small']
 });
